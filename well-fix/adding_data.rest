@@ -1,0 +1,8 @@
+POST http://localhost:3001/submit-form
+Content-Type: application/json
+
+{
+    "name": "Pavel",
+    "email": "",
+    "message": "I want to buy product"
+}

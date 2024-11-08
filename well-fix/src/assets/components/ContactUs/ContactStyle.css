@@ -1,0 +1,114 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: var(--light-sand); /* Use light sand for the background */
+    padding: 30px;
+    color: var(--deep-navy); /* Use deep navy for text color */
+    border-radius: 8px;
+}
+
+.contact form {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    margin-left: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    color: #004085;
+    margin: 25px auto; /* Center the form with auto margin on left and right */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+ }
+.contact form h2{
+    font-size:  30px;
+    text-align: center;
+}
+.contact form input{
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.input-box .field {
+    width: calc(100% - 32px); /* Subtract padding from the total width */
+    height: 50px;
+    background: transparent;
+    border:  2px solid #004085;
+    outline: none;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 16px;
+    color: #004085;
+    margin-top: 8px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+.input-box .field.message{
+    height: 200px;
+    resize: none;
+
+}
+
+
+.contact input, .contact textarea, .contact button {
+    border: 1px solid var(--primary-blue); /* Border in primary blue */
+}
+
+.contact button {
+    background: #004085; /* Button background in primary blue */
+    color: #fff; /* Button text color in white */
+    width: calc(100% - 10%);
+    height: 55px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1 );
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 25px;
+    transition: .5s;
+    
+}
+
+.contact button:hover {
+    background: #007BFF; /* Button hover background in soft coral */
+}
+
+/* Media query for screens up to 768px wide (tablet and mobile) */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .contact form {
+        margin-left: 0; /* Remove left margin */
+        max-width: 100%; /* Allow form to take full width */
+    }
+
+    .contact form h2 {
+        font-size: 24px; /* Reduce font size for heading */
+    }
+
+    .input-box .field, 
+    .input-box .field.message {
+        width: 100%; /* Make inputs take full width */
+    }
+
+    .contact button {
+        width: 100%; /* Make button take full width */
+        height: 50px; /* Adjust button height */
+    }
+}
+
+/* Media query for screens up to 480px wide (mobile phones) */
+@media (max-width: 480px) {
+    .contact {
+        padding: 15px; /* Further reduce padding */
+    }
+
+    .contact form h2 {
+        font-size: 20px; /* Further reduce heading size */
+    }
+
+    .contact button {
+        height: 45px; /* Adjust button height */
+    }
+}
